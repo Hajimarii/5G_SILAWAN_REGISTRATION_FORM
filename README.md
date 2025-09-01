@@ -1,27 +1,82 @@
-# 5G_SILAWAN_REGISTRATION_FORM
-This is a simple registration form made using HTML, CSS, and JavaScript. It collects basic details like name, contact information, batch, technology, and ID number.  
+# Registration Form Project
 
-# Features
-- Input fields: First Name, Middle Name, Last Name, Suffix (optional), Contact Number, Email, Batch, Technology, and ID Number.  
-- Drop-down menu for Technology (Computer, Electrical, Mechanical, Electronics).  
-- Validation for inputs:
-  - Contact Number must be 10–15 digits.  
-  - Email must follow a valid format.  
-  - Batch must be in the format: number-letters (e.g., 33-G or 101-AB).  
-  - ID Number must follow the format: YYYY-NN-NNN (e.g., 2023-33-295).  
-- Invalid inputs are highlighted in red.  
-- Displays an alert if registration is successful or if errors need fixing.  
+This is a simple registration form using **HTML, CSS, JavaScript, and
+PHP**.\
+When you fill it out and submit, it checks your answers and then shows
+all your info in a **popup window**.
 
-# File Structure
-- **index.html** – contains the form structure.  
-- **styles.css** – contains the styling and responsive design.  
-- **script.js** – contains the validation logic.  
+------------------------------------------------------------------------
 
- Responsiveness
-The form is responsive and adjusts for desktops, tablets, and mobile phones.  
+## Features
 
-# How to Use
-1. Open `index.html` in a browser.  
-2. Fill out all required fields.  
-3. Press "Register".  
-4. If everything is valid, an alert will confirm success.  
+-   First/Middle/Last Name → letters only\
+-   Suffix (optional) → only letters and a dot (like `Jr.` or `Sr.`)\
+-   Contact → must be 10--15 numbers\
+-   Email → must look like a real email\
+-   Batch → number + letters (like `33-G` or `101-AB`)\
+-   Technology → pick one from the dropdown\
+-   ID Number → format `YYYY-NN-NNN` (like `2023-33-295`)
+
+------------------------------------------------------------------------
+
+## Files
+
+    Registration/
+    │
+    ├── form.html        # The main form
+    ├── process.php      # Shows your submitted info in a popup
+    ├── assets/
+    │   ├── CSS/styles.css
+    │   └── JS/script.js
+
+------------------------------------------------------------------------
+
+## What you need
+
+-   Install **XAMPP**\
+-   Run **Apache** in the XAMPP Control Panel
+
+------------------------------------------------------------------------
+
+## How to run
+
+1.  Go to **Local Disk (C:) → xampp → htdocs**\
+
+2.  Make a folder called **Registration**\
+
+3.  Put all the project files inside that folder\
+
+4.  Open your browser and type:
+
+        localhost/Registration
+
+    or
+
+        127.0.0.1/Registration
+
+5.  Open **form.html** from there\
+
+6.  Fill out the form → hit Register → popup shows your details → click
+    OK to go back to the form
+
+------------------------------------------------------------------------
+
+## Notes
+
+-   The `/Registration` part is **important**. That's the folder name
+    inside `htdocs` where your project is saved.\
+-   If Apache isn't running, PHP won't work and you'll only see the
+    code.
+
+------------------------------------------------------------------------
+
+## Troubleshooting
+
+-   **Problem:** Browser shows PHP code instead of popup\
+    **Fix:** Start Apache in the XAMPP Control Panel and make sure your
+    files are inside `htdocs/Registration`.
+
+-   **Problem:** `localhost/Registration` gives error\
+    **Fix:** Check that the folder name is exactly **Registration** and
+    you typed it correctly in the browser.
+
