@@ -10,45 +10,45 @@
     <div class="page-wrapper">
       <div class="form-container">
         <h2>CITE Register</h2>
-        <form id="regForm">
+        <form action="process.php" method="post" id="regForm">
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" required />
+            <input type="text" id="firstName" name="firstName" required />
           </div>
 
           <div class="form-group">
             <label for="middleName">Middle Name</label>
-            <input type="text" id="middleName" required />
+            <input type="text" id="middleName" name="middleName" required />
           </div>
 
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" required />
+            <input type="text" id="lastName" name="lastName" required />
           </div>
 
           <div class="form-group">
             <label for="suffix">Suffix (Optional)</label>
-            <input type="text" id="suffix" />
+            <input type="text" id="suffix" name="suffix" />
           </div>
 
           <div class="form-group">
             <label for="contact">Contact Number</label>
-            <input type="text" id="contact" required />
+            <input type="text" id="contact" name="contact" required />
           </div>
 
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" required />
+            <input type="email" id="email" name="email" required />
           </div>
 
           <div class="form-group">
             <label for="batch">Batch and Section (Ex: 33-G)</label>
-            <input type="text" id="batch" required />
+            <input type="text" id="batch" name="batch" required />
           </div>
 
           <div class="form-group">
             <label for="technology">Technology</label>
-            <select id="technology" required>
+            <select id="technology" name="technology" required>
               <option value="">-- Select Technology --</option>
               <option value="Computer">Computer</option>
               <option value="Electrical">Electrical</option>
@@ -59,7 +59,7 @@
 
           <div class="form-group">
             <label for="idNumber">ID Number (Ex: 2023-33-295)</label>
-            <input type="text" id="idNumber" required />
+            <input type="text" id="idNumber" name="idNumber" required />
           </div>
 
           <button type="submit" class="btn">Register</button>
