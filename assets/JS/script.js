@@ -16,7 +16,7 @@ document.getElementById("regForm").addEventListener("submit", function (e) {
   const technology = document.getElementById("technology");
   const idNumber = document.getElementById("idNumber");
 
-  // ✅ Letters only for names
+  // Letters only for names
   const nameRegex = /^[A-Za-z]+$/;
   if (!nameRegex.test(firstName.value.trim())) {
     firstName.classList.add("error");
@@ -31,7 +31,7 @@ document.getElementById("regForm").addEventListener("submit", function (e) {
     isValid = false;
   }
 
-  // ✅ Suffix: optional, but if filled → must be letters + dot
+  // Suffix: optional, but if filled → must be letters + dot
   const suffixRegex = /^[A-Za-z.]*$/;
   if (suffix.value.trim() !== "" && !suffixRegex.test(suffix.value.trim())) {
     suffix.classList.add("error");
@@ -73,3 +73,4 @@ document.getElementById("regForm").addEventListener("submit", function (e) {
     alert("Please correct the highlighted fields.");
   }
 });
+
