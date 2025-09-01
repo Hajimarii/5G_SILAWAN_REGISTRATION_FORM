@@ -23,8 +23,8 @@ all your info in a **popup window**.
 
     Registration/
     │
-    ├── form.html        # The main form
-    ├── process.php      # Shows your submitted info in a popup
+    ├── index.html        # The main form
+    ├── index.php      # Shows your submitted info in a popup
     ├── assets/
     │   ├── CSS/styles.css
     │   └── JS/script.js
@@ -54,7 +54,7 @@ all your info in a **popup window**.
 
         127.0.0.1/Registration
 
-5.  Open **form.html** from there\
+5.  Open **index.html** from there\
 
 6.  Fill out the form → hit Register → popup shows your details → click
     OK to go back to the form
